@@ -1,7 +1,7 @@
 // 匯入類型 `ClassValue`（用於類名）和函式 `clsx`，用來條件式地合併 className
 import { type ClassValue, clsx } from 'clsx'
 
-// 匯入 `twMerge`，用來處理 Tailwind CSS 類名的衝突（例如同時有 `p-2` 和 `p-4`，會保留後者）
+// 匯入 `twMerge`，用來處理 Tailwind CSS 類名的衝突
 import { twMerge } from 'tailwind-merge'
 
 /**

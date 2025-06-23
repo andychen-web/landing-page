@@ -84,14 +84,6 @@ const HowItWorksList: HowItWorksProps[] = [
             class="w-[180px] md:w-[250px] lg:w-[300px] transition-transform duration-300 hover:-translate-y-4"
           />
         </div>
-
-        <!-- 背景裝飾圓形 -->
-        <div
-          :class="[
-            'absolute top-1/2 -translate-y-1/2 w-44 h-72 lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl z-0',
-            index % 2 !== 0 ? 'left-0' : 'right-0'
-          ]"
-        ></div>
       </div>
     </div>
   </section>
