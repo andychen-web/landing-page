@@ -1,31 +1,22 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
-import {
-  NavigationMenuRoot,
-  type NavigationMenuRootEmits,
-  type NavigationMenuRootProps,
-  useForwardPropsEmits,
-} from 'radix-vue'
+import type { HTMLAttributes } from 'vue'
+import { NavigationMenuRoot, type NavigationMenuRootProps } from 'radix-vue'
 import NavigationMenuViewport from './NavigationMenuViewport.vue'
 import { cn } from '@/lib/utils'
 
-const props = defineProps<NavigationMenuRootProps & { class?: HTMLAttributes['class'] }>()
-
-const emits = defineEmits<NavigationMenuRootEmits>()
-
-const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props
-
-  return delegated
-})
-
-const forwarded = useForwardPropsEmits(delegatedProps, emits)
+// 定義傳入的 props：NavigationMenu 的原始 props + 額外 class 支援
+const props = defineProps<NavigationMenuRootProps & {
+  class?: HTMLAttributes['class']
+}>()
 </script>
 
 <template>
   <NavigationMenuRoot
-    v-bind="forwarded"
-    :class="cn('relative z-10 flex max-w-max flex-1 items-center justify-center', props.class)"
+    v-bind="props"
+    :class="cn(
+      'relative z-10 flex max-w-max flex-1 items-center justify-center',
+      props.class
+    )"
   >
     <slot />
     <NavigationMenuViewport />

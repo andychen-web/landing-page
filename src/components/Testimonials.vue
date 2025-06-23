@@ -94,7 +94,7 @@ const reviewList: ReviewProps[] = [
           :key="review.name"
           class="md:basis-1/2 lg:basis-1/3"
         >
-          <Card class="bg-muted/50 dark:bg-card">
+          <Card class="bg-muted dark:bg-card">
             <CardContent class="pt-6 pb-0">
 
               "{{ review.comment }}"

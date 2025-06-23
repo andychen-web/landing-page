@@ -49,7 +49,7 @@ import { ArrowRight } from "lucide-vue-next";
           </Button>
 
           <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
-            <a href="/promotions">View Promotions</a>
+            <a href="">View Promotions</a>
           </Button>
         </div>
       </div>
