@@ -9,8 +9,8 @@
     // For Test Deploy,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "suppressImplicitAnyIndexErrors": true,
     // Suppress errors for object[string]
+    "ignoreDeprecations": "5.0"
 
 
     /* Bundler mode */
