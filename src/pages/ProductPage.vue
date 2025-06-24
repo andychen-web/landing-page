@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import Card from "@/components/ui/card/Card.vue";
 
 interface GamesProps {
