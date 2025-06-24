@@ -21,7 +21,7 @@ const games: GamesProps[] = [
       <div class="text-primary mb-4 text-center">Featured Games</div>
       <Card
         v-for="{ imageUrl, title } in games"
-        :key="game.title"
+        :key="title"
         class="bg-muted/50 dark:bg-card"
       >
       </Card>
