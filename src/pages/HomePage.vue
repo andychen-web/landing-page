@@ -8,10 +8,12 @@ import Contact from "../components/Contact.vue";
 </script>
 
 <template>
-  <Navbar />
-  <Hero />
-  <Culture />
-  <HowItWorks />
-  <Testimonials />
-  <Contact />
+  <div class="bg-dark">
+    <Navbar />
+    <Hero />
+    <Culture />
+    <HowItWorks />
+    <Testimonials />
+    <Contact />
+  </div>
 </template>
